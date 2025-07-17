@@ -23,7 +23,7 @@ right3 = image.width - 100
 top = 0
 green_cropped = green.crop((left3, top, right3, image.height))
 
-new_image = Image.merge("RGB", (red_blend, blue_blend, green_cropped))
+new_image = Image.merge("RGB", (red_blend, green_cropped, blue_blend))
 new_image.save("finalmonro4.jpg")
 
 new_image.thumbnail((80, 80)) 
